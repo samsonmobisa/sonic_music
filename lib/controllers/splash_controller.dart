@@ -65,7 +65,10 @@ class SplashScreenController {
 
   //this will change the value of title
   changeCurrentShowing(){
-    print(currentShowing.value);
+    print(bodyData.length);
+if(bodyData.length-1 == currentShowing.value){
+  return;
+}
     currentShowing.value = currentShowing.value+1;
   }
 }
