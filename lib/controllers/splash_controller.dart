@@ -1,4 +1,5 @@
 import 'package:get/get.dart';
+import 'package:musicapp/pages/devicescaning_page.dart';
 
 class SplashScreenController {
   /*
@@ -70,6 +71,7 @@ class SplashScreenController {
   changeCurrentShowing() {
     print(bodyData.length);
     if (bodyData.length - 1 == currentShowing.value) {
+      Get.off(DeviceScanningPage());
       return;
     }
     currentShowing.value = currentShowing.value + 1;
