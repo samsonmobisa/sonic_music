@@ -11,14 +11,13 @@ class TextWidget extends StatelessWidget{
   final TextDecoration?  decoration;
 
   const TextWidget(
-      {Key? key,
+      {super.key,
         required this.value,
         required this.fontSize,
         required this.fontWeight,
         required this.color,
         required this.textAlign,
-        this.decoration})
-      : super(key: key);
+        this.decoration});
   @override
   Widget build(BuildContext context) {
     return Text(

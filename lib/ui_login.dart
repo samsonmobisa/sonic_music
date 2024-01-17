@@ -75,7 +75,7 @@ class LoginUISample extends GetView {
                           value: e['title'].toString(),
                           fontSize: index==0?18:13,
                           fontWeight: index==0?FontWeight.w500:FontWeight.w400,
-                          color: index==0?const Color(0xffD0D0D0):index==3?const Color(0xffFFFFFF):const Color(0xff000000),
+                          color: index==0? Color(0xffD0D0D0):index==3?const Color(0xffFFFFFF):const Color(0xff000000),
                           textAlign: TextAlign.center),
                     ],
                   ),
